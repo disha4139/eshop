@@ -1,0 +1,474 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Eshop",
+    "dateExported": "2023-03-06T09:00:32.793Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "b6bb83aa-1527-4afa-bbc1-acf3639bc998",
+            "name": "category",
+            "containerId": "",
+            "created": "2023-03-03T04:16:46.570Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "4df1d6f5-52ec-4bb6-9c09-8431e8b2739f",
+            "name": "user",
+            "containerId": "",
+            "created": "2023-03-03T04:17:54.875Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "3fae2200-0cf4-46e7-b1e1-68efea941a39",
+            "name": "product",
+            "containerId": "",
+            "created": "2023-03-03T04:18:14.324Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "5622d192-3349-4c99-ba8b-8533ab4a6b74",
+            "name": "order",
+            "containerId": "",
+            "created": "2023-03-03T04:37:00.548Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "9cced81e-ee8d-4f58-811f-cfcb22ce714a",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "4df1d6f5-52ec-4bb6-9c09-8431e8b2739f",
+            "name": "register_user",
+            "url": "localhost:5050/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-02T12:28:03.997Z",
+            "modified": "2023-03-03T04:17:57.698Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Deep Patoliya\",\n  \"email\": \"deeppatoliya6353@email.com\",\n  \"password\": \"deepu@82001\",\n  \"street\": \"jalkranti\",\n  \"apartment\": \"amroli\",\n  \"city\": \"surat\",\n  \"postalcode\": \"785634\",\n  \"country\": \"India\",\n  \"phone\": \"8798756678\",\n  \"isAdmin\": false\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "cb3f51f4-eb3d-4080-9d33-2535cad0d827",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "b6bb83aa-1527-4afa-bbc1-acf3639bc998",
+            "name": "Update_category",
+            "url": "localhost:5050/category/",
+            "method": "PATCH",
+            "sortNum": 10000,
+            "created": "2023-03-03T04:14:16.965Z",
+            "modified": "2023-03-03T04:17:37.300Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": ""
+                    },
+                    {
+                        "name": "color",
+                        "value": ""
+                    }
+                ],
+                "files": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e81228e5-64d3-4bd6-b7ca-a6a12f8175cb",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "4df1d6f5-52ec-4bb6-9c09-8431e8b2739f",
+            "name": "get_user",
+            "url": "localhost:5050/user",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-02T12:31:41.905Z",
+            "modified": "2023-03-06T04:57:17.245Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f02189bf-1e3f-4f12-bf45-1a984527cedf",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "b6bb83aa-1527-4afa-bbc1-acf3639bc998",
+            "name": "get_category",
+            "url": "localhost:5050/category",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-03T04:13:40.289Z",
+            "modified": "2023-03-03T04:16:53.529Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d7282aa1-d131-4a36-9048-a001fc090184",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "b6bb83aa-1527-4afa-bbc1-acf3639bc998",
+            "name": "insert_cataegory",
+            "url": "localhost:5050/category",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-03-03T03:43:27.680Z",
+            "modified": "2023-03-03T04:16:55.136Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "laptop"
+                    },
+                    {
+                        "name": "color",
+                        "value": "black"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "icon",
+                        "value": "/Volumes/Data/Vrushabh_Node/eshopImages/—Pngtree—laptop icon_5184705.png"
+                    },
+                    {
+                        "name": "image",
+                        "value": "/Volumes/Data/Vrushabh_Node/eshopImages/download.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8b30a0e4-aa0e-4b66-8242-0719b2b563c1",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "b6bb83aa-1527-4afa-bbc1-acf3639bc998",
+            "name": "delete_category",
+            "url": "localhost:5050/category",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-03-03T04:17:07.722Z",
+            "modified": "2023-03-03T04:17:28.571Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a349b69a-2761-46d5-ac8a-735eee9b3481",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "3fae2200-0cf4-46e7-b1e1-68efea941a39",
+            "name": "get_product",
+            "url": "localhost:5050/product",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-03-03T04:18:25.860Z",
+            "modified": "2023-03-03T04:19:04.781Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "980fb070-7257-4e83-a9f4-44beda72703e",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "3fae2200-0cf4-46e7-b1e1-68efea941a39",
+            "name": "insert_product",
+            "url": "localhost:5050/product",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-03-03T04:19:20.494Z",
+            "modified": "2023-03-03T04:28:10.058Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Macbook Air"
+                    },
+                    {
+                        "name": "description",
+                        "value": "The MacBook Air has an anodized aluminum casing that is 0.16 inches at its thinnest point and 0.76 inches at its thickest. Often described as the same size as a pad of paper, the laptop has just one USB port, an audio headphone jack and built-in speakers and microphone."
+                    },
+                    {
+                        "name": "richdescription",
+                        "value": "https://www.apple.com/in/macbook-air-m1/"
+                    },
+                    {
+                        "name": "brand",
+                        "value": "Apple"
+                    },
+                    {
+                        "name": "price",
+                        "value": "99999"
+                    },
+                    {
+                        "name": "category",
+                        "value": "640173be6cb844294a512b8d"
+                    },
+                    {
+                        "name": "countInStock",
+                        "value": "99"
+                    },
+                    {
+                        "name": "rating",
+                        "value": "5"
+                    },
+                    {
+                        "name": "isFeatured",
+                        "value": "true"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "/Volumes/Data/Vrushabh_Node/eshopImages/pdp_1655883770_6213.png"
+                    },
+                    {
+                        "name": "images",
+                        "value": "/Volumes/Data/Vrushabh_Node/eshopImages/pdp_1655883770_6504.png"
+                    },
+                    {
+                        "name": "images",
+                        "value": "/Volumes/Data/Vrushabh_Node/eshopImages/pdp_1655883770_6796.png"
+                    },
+                    {
+                        "name": "images",
+                        "value": "/Volumes/Data/Vrushabh_Node/eshopImages/pdp_1655883770_7073.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c6fbc61f-e81c-467e-b5d0-9df971b412fc",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "3fae2200-0cf4-46e7-b1e1-68efea941a39",
+            "name": "update_product",
+            "url": "localhost:5050/product/640177c3c940af8422050cf8",
+            "method": "PATCH",
+            "sortNum": 90000,
+            "created": "2023-03-03T04:31:35.318Z",
+            "modified": "2023-03-06T05:05:45.947Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "\"Macbook Air\""
+                    },
+                    {
+                        "name": "description",
+                        "value": "The MacBook Air has an anodized aluminum casing that is 0.16 inches at its thinnest point and 0.76 inches at its thickest. Often described as the same size as a pad of paper, the laptop has just one USB port, an audio headphone jack and built-in speakers and microphone."
+                    },
+                    {
+                        "name": "richdescription",
+                        "value": "https://www.apple.com/in/macbook-air-m2/"
+                    },
+                    {
+                        "name": "brand",
+                        "value": "mac"
+                    },
+                    {
+                        "name": "price",
+                        "value": "98000"
+                    },
+                    {
+                        "name": "category",
+                        "value": "640173be6cb844294a512b8d"
+                    },
+                    {
+                        "name": "countInStock",
+                        "value": "100"
+                    },
+                    {
+                        "name": "rating",
+                        "value": "4"
+                    },
+                    {
+                        "name": "isFeatured",
+                        "value": "true"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "/Volumes/Data/Vrushabh_Node/eshopImages/pdp_1655883770_6213.png"
+                    },
+                    {
+                        "name": "images",
+                        "value": "/Volumes/Data/Vrushabh_Node/eshopImages/pdp_1655883770_6504.png"
+                    },
+                    {
+                        "name": "images",
+                        "value": "/Volumes/Data/Vrushabh_Node/eshopImages/pdp_1655883770_6796.png"
+                    },
+                    {
+                        "name": "images",
+                        "value": "/Volumes/Data/Vrushabh_Node/eshopImages/pdp_1655883770_7073.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "797780ad-8078-43ff-b94d-c1f7c901fc6a",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "3fae2200-0cf4-46e7-b1e1-68efea941a39",
+            "name": "delete_product",
+            "url": "localhost:5050/product",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-03-03T04:35:38.635Z",
+            "modified": "2023-03-03T06:04:53.188Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8dda8fed-37f8-48f4-a9ff-028644448f2d",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "5622d192-3349-4c99-ba8b-8533ab4a6b74",
+            "name": "get_order",
+            "url": "localhost:5050/order",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-03-03T04:37:09.592Z",
+            "modified": "2023-03-03T04:37:37.586Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7c5a9a20-c196-4049-9ed1-8ffa75218005",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "5622d192-3349-4c99-ba8b-8533ab4a6b74",
+            "name": "insert_order",
+            "url": "localhost:5050/order",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-03-03T04:38:22.417Z",
+            "modified": "2023-03-03T05:07:11.039Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"orderitems\": [\n    {\n      \"quantity\": 3,\n      \"product\": \"640177c3c940af8422050cf8\"\n    }\n  ],\n  \"shippingAddress1\": \"SkillQode\",\n  \"shippingAddress2\": \"MicraSolution\",\n  \"city\": \"Surat\",\n  \"postalcode\": \"395010\",\n  \"country\": \"India\",\n  \"phone\": \"9499556267\",\n  \"user\": \"640096cc5957ca1be6483c54\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bb16ade6-2459-4917-894a-5c4a286c9f4a",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "5622d192-3349-4c99-ba8b-8533ab4a6b74",
+            "name": "update_order",
+            "url": "localhost:5050/order/6401845e6b55ab56b950a41e",
+            "method": "PATCH",
+            "sortNum": 130000,
+            "created": "2023-03-03T05:24:50.709Z",
+            "modified": "2023-03-03T05:28:37.967Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"orderitems\": [\n    {\n      \"quantity\": 3,\n      \"product\": \"640177c3c940af8422050cf8\"\n    }\n  ],\n  \"shippingAddress1\": \"SkillQode\",\n  \"shippingAddress2\": \"MicraSolution\",\n  \"city\": \"Surat\",\n  \"postalcode\": \"395011\",\n  \"country\": \"India\",\n  \"phone\": \"9499556267\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "64a44d68-e11a-410b-ac96-7ef37a338ef9",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "5622d192-3349-4c99-ba8b-8533ab4a6b74",
+            "name": "delete_order",
+            "url": "localhost:5050/order/",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2023-03-03T05:28:57.021Z",
+            "modified": "2023-03-03T06:09:07.800Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a1712fb5-add5-4752-97a3-ea24c094ba96",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "4df1d6f5-52ec-4bb6-9c09-8431e8b2739f",
+            "name": "login_user",
+            "url": "localhost:5050/user/login",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2023-03-03T05:29:54.623Z",
+            "modified": "2023-03-03T05:44:19.584Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\" : \"vrushabhsatasiya82001@email.com\",\n  \"password\" : \"Vru@82001\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9044bdc1-e8e0-450b-8c0d-a89d3ba29294",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "4df1d6f5-52ec-4bb6-9c09-8431e8b2739f",
+            "name": "update_user",
+            "url": "localhost:5050/user/6400970c5957ca1be6483c63",
+            "method": "PATCH",
+            "sortNum": 160000,
+            "created": "2023-03-03T05:52:18.678Z",
+            "modified": "2023-03-06T04:58:39.324Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"deeppatoliya82001@email.com\",\n  \"password\": \"deepu@82001\",\n  \"street\": \"maruti\",\n  \"apartment\": \"sudama chowk\",\n  \"city\": \"Surat\",\n  \"postalcode\": \"785634\",\n  \"country\": \"India\",\n  \"phone\": \"8798756678\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "89400133-f610-4085-9059-e1d72858c778",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "4df1d6f5-52ec-4bb6-9c09-8431e8b2739f",
+            "name": "delete_user",
+            "url": "localhost:5050/user/",
+            "method": "DELETE",
+            "sortNum": 170000,
+            "created": "2023-03-03T05:54:03.396Z",
+            "modified": "2023-03-03T05:54:25.582Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "56f581af-1411-4f2a-8d9a-62b9c404c8ca",
+            "colId": "46dd8ba6-cd8f-4188-b7ee-e2d838e07ea4",
+            "containerId": "4df1d6f5-52ec-4bb6-9c09-8431e8b2739f",
+            "name": "logout",
+            "url": "localhost:5050/user/logout",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2023-03-03T05:54:35.750Z",
+            "modified": "2023-03-03T05:55:02.490Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
